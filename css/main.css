@@ -1,7 +1,6 @@
 html {
   box-sizing: border-box;
-  font: normal 100%/1.3 "sans-serif", sans-serif;
-, sans-serif;
+  font: normal 100%/1.3 sans-serif, sans-serif;
   -moz-text-size-adjust: 100%;
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
@@ -35,7 +34,6 @@ body {
 
  section p {
    margin-top: 0;
-   font-size:
  }
 
 .btn {
@@ -46,13 +44,17 @@ body {
   text-transform: none;
   border-width: inherit;
   background-color: #555;
+  text-align: center;
 }
 
 section a {
   text-decoration: none;
 }
 
-img {
+.img-flex {
+
+}
+.img-flex img {
   margin-top: .1em;
   display: block;
   width: 100%;
@@ -72,35 +74,48 @@ img {
     display: flex;
   }
 
+  section h1 {
+    font-size: 1.625em;
+  }
+
   section {
     vertical-align: middle;
     text-align: left;
     line-height: 1.3;
-    width: 50%;
+    width: 100%;
+    margin-left: 1.275rem;
   }
 
   section h3 {
-    margin-top: 1em;
+    margin-top: 1.5em;
     margin-bottom: 0;
 
   }
 
   section p {
+    max-width: 100%;
     font-size: 110%;
     line-height: 1.4;
-    margin-top: 1em;
-  }
-
+    margin-top: 0;
+    }
 
   .img-flex {
+  margin-right: 0;
+  max-width: 100%;
+  width: 125%;
+
+  }
+  .img-flex img {
     display: inline-block;
-    width: 57%;
+    width: 97%;
     margin-top: 4.5em;
-    margin-right:.275em;
+    margin-left: .625rem;
   }
 
   .btn {
     margin-top: .5em;
+    width: 40%;
+    padding-top: 1em
   }
 
 }
@@ -109,15 +124,9 @@ img {
 
 
   section {
+    margin-left: 1em;
     font: normal 120%/1.5;
-
     width: 50%;
-  }
-
-  .img-flex {
-    display: inline-block;
-    width: 50%;
-    margin-top: 5em;
   }
 
 }
